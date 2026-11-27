@@ -1,0 +1,31 @@
+{
+  "name": "vialis",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "VIALIS · Sistema de Control de Tráfico Urbano (React + FastAPI + SQLite)",
+  "scripts": {
+    "dev": "node tools/dev.mjs",
+    "dev:api": "python -m server.app",
+    "dev:web": "vite",
+    "server": "python -m server.app",
+    "build": "vite build",
+    "preview": "vite preview",
+    "seed:curate": "node tools/curate-seed.mjs",
+    "db:reset": "node tools/reset-db.mjs"
+  },
+  "dependencies": {
+    "@tanstack/react-virtual": "^3.13.12",
+    "leaflet": "^1.9.4",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "react-leaflet": "^5.0.0",
+    "zustand": "^5.0.8"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.1.16",
+    "@vitejs/plugin-react": "^5.1.1",
+    "tailwindcss": "^4.1.16",
+    "vite": "^7.1.10"
+  }
+}
